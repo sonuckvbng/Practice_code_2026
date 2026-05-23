@@ -15,7 +15,7 @@ This project serves as a collection of fundamental Java programs that cover esse
 
 ```
 Practice code/
-├── SquareOfEvenNumbers.java          # Calculate squares of even and odd numbers using Stream API
+├── EvenOrOdd.SquareOfEvenNumbers.java          # Calculate squares of even and odd numbers using Stream API
 ├── EvenOrOdd/
 │   ├── EvenOrOdd.java                # Separate even and odd numbers (traditional approach)
 │   └── EvenOrOddUsingStreamApi.java   # Separate even and odd numbers (Stream API approach)
@@ -29,7 +29,7 @@ Practice code/
 
 ## Key Programs
 
-### 1. **SquareOfEvenNumbers.java**
+### 1. **EvenOrOdd.SquareOfEvenNumbers.java**
 - **Concept**: Stream API, filter, map operations
 - **Challenge**: Calculate squares of even and odd numbers from a list
 - **Topics Covered**: Lambda expressions, functional programming
@@ -63,12 +63,12 @@ This collection of programs helps prepare for technical interviews by practicing
 
 1. **Compile**: Use `javac` to compile any Java file
    ```bash
-   javac SquareOfEvenNumbers.java
+   javac EvenOrOdd.SquareOfEvenNumbers.java
    ```
 
 2. **Run**: Execute the compiled class with `java`
    ```bash
-   java SquareOfEvenNumbers
+   java EvenOrOdd.SquareOfEvenNumbers
    ```
 
 3. **Practice**: Try modifying these programs or writing variations to deepen understanding
