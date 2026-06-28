@@ -7,8 +7,11 @@ public class FactorialNumberWithStreamAPI {
 
         int factorialOfNumber = IntStream.rangeClosed(1, 5)
                 .reduce(1, (a, b) -> a * b);
+        int factorialOfNumber2 = IntStream.rangeClosed(1, 5)
+                .reduce(1, Integer::sum);
 
         System.out.println("factorial of number is " + factorialOfNumber);
+        System.out.println("Sum of number is " + factorialOfNumber2);
     }
 }
 

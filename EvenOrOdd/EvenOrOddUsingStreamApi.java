@@ -62,5 +62,15 @@ public class EvenOrOddUsingStreamApi {
 
         // Step 6: Close the scanner
         scanner.close();
+
+
+        int[] num = {1, 2, 3, 4, 4, 5, 6, 6, 7, 7, 7, 9};
+
+        Map<Boolean, List<Integer>> group =
+                Arrays.stream(num)
+                        .distinct()
+                        .boxed()
+                        .collect(Collectors.partitioningBy(n -> n % 2 == 0));
+        System.out.println("Stream api : " + group.get(true));
     }
 }

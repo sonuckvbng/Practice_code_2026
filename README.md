@@ -1,6 +1,6 @@
 # Java Practice Code - Interview Coding Challenges
 
-This repository contains basic Java programs and coding challenges designed for **interview preparation** and **programming practice**.
+This repository contains basic Java programs and coding challenges designed for **interview_2026_question preparation** and **programming practice**.
 
 ## Overview
 
@@ -19,7 +19,7 @@ Practice code/
 ├── EvenOrOdd/
 │   ├── EvenOrOdd.java                # Separate even and odd numbers (traditional approach)
 │   └── EvenOrOddUsingStreamApi.java   # Separate even and odd numbers (Stream API approach)
-├── interview/
+├── interview_2026_question/
 │   └── LongestSubsequentNumberIncreasingOrder.java  # Find longest increasing subsequence
 ├── SeconHighestSalary/
 │   ├── Emplyee.java                  # Object_to_test.Employee class definition

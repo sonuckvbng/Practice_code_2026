@@ -3,7 +3,7 @@
 Purpose: quick, actionable guide to help an AI coding agent (and a human) become productive with this repository of Java practice programs.
 
 1) Big picture
-- This repository is a flat collection of small Java example programs (interview/practice problems). There is no framework, no build tool, and no tests. Expect each file to be a self-contained runnable example.
+- This repository is a flat collection of small Java example programs (interview_2026_question/practice problems). There is no framework, no build tool, and no tests. Expect each file to be a self-contained runnable example.
 - Common focus: Stream API and Collections usage (groupingBy, partitioningBy, toMap, mapping, maxBy, counting), plus simple algorithms (factorial, subsequence, duplicate detection).
 
 2) Key files & where to look

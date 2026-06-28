@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class ConvertListToMapUsingStreamAPI {
+public class FindOutTheLengthOfEachWordFromList {
     public static void main(String[] args) {
 
         List<String> empList = Arrays.asList("Sonu","Aruna","Naina");

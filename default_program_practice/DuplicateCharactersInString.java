@@ -1,6 +1,7 @@
 package default_program_practice;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
@@ -16,8 +17,8 @@ public class DuplicateCharactersInString {
         Set<Character> set = new HashSet<>();
 
         System.out.println("Duplicate Elements In Array using forEach and HashSet :");
-        for(char ch : str.toCharArray()){
-            if(!set.add(ch)){
+        for (char ch : str.toCharArray()) {
+            if (!set.add(ch)) {
                 System.out.println(ch);
             }
         }
@@ -31,13 +32,16 @@ public class DuplicateCharactersInString {
                 .forEach(System.out::println);
 
         //Stream API with groupingBy() and counting()
-        str.chars()
-                .mapToObj(ch -> (char)ch)
+        List<String> dubCharByStringApi = str.chars()
+                .mapToObj(ch -> (char) ch)
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
                 .entrySet()
                 .stream()
-                .filter(entry -> entry.getValue() >1)
+                .filter(entry -> entry.getValue() > 1)
                 .map(Map.Entry::getKey)
+                .map(String::valueOf)
                 .toList();
+
+        System.out.println("Dublicate char by StreamApi : " + dubCharByStringApi);
     }
 }
