@@ -10,7 +10,6 @@ public class RevDuplicateStringChatSuingStream {
 
         String str = "programming";
 
-
         // Using Stream api Distinct() ---------------------------------------------------------------------------
 
         String distinctCharString = str.chars()
@@ -18,7 +17,6 @@ public class RevDuplicateStringChatSuingStream {
                 .mapToObj(ch -> String.valueOf((char) ch))
                 .collect(Collectors.joining());
         System.out.println("distinct Char String using distinct() streamapi: " + distinctCharString);
-
 
         //Using Stream api without distinct method - used linkedHashSet<>() --------------------------------------
 

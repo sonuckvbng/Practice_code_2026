@@ -1,9 +1,8 @@
+import Object_to_test.Employee;
+
 import java.util.*;
 import java.util.function.Function;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
-
-import static java.util.Arrays.stream;
 
 public class EmployeeOperation {
 
@@ -18,18 +17,18 @@ public class EmployeeOperation {
                 new Employee(4, "Naina", "ASO", 600000)
         );
 
-        //Sort Employee List using Comparator & Streams
+        //Sort Object_to_test.Employee List using Comparator & Streams
         empList.stream().map(Employee::getSalary)
                 .sorted(Comparator.reverseOrder())
                 .forEach(System.out::println);
 
-        //Find Top 3 Highest Salaries from Employee List
+        //Find Top 3 Highest Salaries from Object_to_test.Employee List
         empList.stream().map(Employee::getSalary)
                 .sorted(Comparator.reverseOrder())
                 .limit(3)
                 .forEach(System.out::println);
 
-        //Find Top 3 Highest Salaries from Employee List  ------another way sorted()
+        //Find Top 3 Highest Salaries from Object_to_test.Employee List  ------another way sorted()
         empList.stream().sorted(Comparator.comparing(Employee::getSalary).reversed())
                 .limit(3)
                 .forEach(System.out::println);
@@ -41,15 +40,15 @@ public class EmployeeOperation {
             System.out.println(k + " " + v);
         });
 
-        //Convert List<Employee> to Map<id, Employee>
+        //Convert List<Object_to_test.Employee> to Map<id, Object_to_test.Employee>
         Map<Integer, Employee> mapEmpById= empList.stream()
-                .collect(Collectors.toMap(Employee::getId,emp->emp));
-        System.out.println("Convert List<Employee> to Map<id, Employee> is : " + mapEmpById);
+                .collect(Collectors.toMap(Employee::getId, emp->emp));
+        System.out.println("Convert List<Object_to_test.Employee> to Map<id, Object_to_test.Employee> is : " + mapEmpById);
 
         //OR by function.identity()
         Map<Integer, Employee> mapEmpByIdFunc= empList.stream()
                 .collect(Collectors.toMap(Employee::getId, Function.identity()));
-        System.out.println("Convert List<Employee> to Map<id, Employee> by function.identity() is : " + mapEmpByIdFunc);
+        System.out.println("Convert List<Object_to_test.Employee> to Map<id, Object_to_test.Employee> by function.identity() is : " + mapEmpByIdFunc);
 
         //Group Employees by Department and Count
         Map<String,Long> mapEmpCountByDepartment = empList.stream()
