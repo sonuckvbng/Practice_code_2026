@@ -1,3 +1,5 @@
+package default_program_practice;
+
 import java.util.*;
 
 public class CoordinatePrintTaskDataAnnotation {

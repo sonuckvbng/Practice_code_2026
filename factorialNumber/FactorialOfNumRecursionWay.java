@@ -12,7 +12,6 @@ public class FactorialOfNumRecursionWay {
             return 1;
         }
 
-
         return num * factorialOfNum(num -1);
     }
 }

@@ -22,7 +22,7 @@ Practice code/
 ├── interview/
 │   └── LongestSubsequentNumberIncreasingOrder.java  # Find longest increasing subsequence
 ├── SeconHighestSalary/
-│   ├── Emplyee.java                  # Employee class definition
+│   ├── Emplyee.java                  # Object_to_test.Employee class definition
 │   └── SecondHighestSalary.java       # Find second highest salary using Stream API
 └── README.md                           # This file
 ```

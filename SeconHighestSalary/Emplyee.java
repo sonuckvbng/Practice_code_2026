@@ -27,7 +27,7 @@ class Employee{
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Object_to_test.Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", salary=" + salary +

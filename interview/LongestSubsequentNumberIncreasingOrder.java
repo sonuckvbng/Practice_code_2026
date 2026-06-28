@@ -1,22 +1,28 @@
 package interview;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class LongestSubsequentNumberIncreasingOrder {
-    // find longest increasing subsequence
-//
-//   public static void main(String[] args) {
-//       int[] num = {3, 10, 2, 1, 20};
-//       int[] result;
-//       Arrays.sort();
-//       for (int i = 0; i < num.length; i++) {
-//           for(int j=1; j<20;j++){
-//               if (j == num[i]) {
-//                    result[i]=num[i];
-//               }
-//           }
-//
-//       }
-//   }
+    // find the longest increasing subsequence
+    // Maintain a list of the smallest possible tail values for increasing subsequences of different lengths
 
+    public static void main(String[] args) {
+        int[] arr = {3, 10, 2, 1, 20};
+        List<Integer> list = new ArrayList<>();
+
+        for (int num : arr) {
+            int index = Collections.binarySearch(list, num);
+
+            if (index < 0)
+                index = -(index + 1);
+
+            if (index == list.size())
+                list.add(num);
+            else
+                list.set(index, num);
+        }
+        System.out.println(list.size());
+    }
 }
