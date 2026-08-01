@@ -11,7 +11,8 @@ public class ConvertListToMapUsingStreamAPI {
         List<String> empList = Arrays.asList("Sonu","Aruna","Naina");
 
         Map<Integer, String> listToMap = empList.stream()
-                .collect(Collectors.toMap(String::length, name -> name,(oldLen,newLen)->oldLen));
+                .collect(Collectors.toMap(String::length,
+                        name -> name,(oldLen,newLen)->oldLen));
 
         System.out.println("List to Map using Stream Api : " + listToMap);
 
